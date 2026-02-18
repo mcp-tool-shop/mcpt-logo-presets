@@ -1,0 +1,62 @@
+{
+  "name": "@mcptoolshop/logo-presets",
+  "version": "0.1.0",
+  "description": "Curated generation presets for @mcptoolshop/logo-studio. Skip the tuning, start generating.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "logo.png"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "logo",
+    "logo-generator",
+    "presets",
+    "diffusion",
+    "sdxl",
+    "flux",
+    "comfyui",
+    "brand",
+    "ai",
+    "prompt-engineering"
+  ],
+  "author": "mcp-tool-shop <64996768+mcp-tool-shop@users.noreply.github.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/mcp-tool-shop/mcpt-logo-presets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcp-tool-shop/mcpt-logo-presets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mcp-tool-shop/mcpt-logo-presets/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "@mcptoolshop/logo-studio": ">=0.4.0"
+  },
+  "devDependencies": {
+    "@mcptoolshop/logo-studio": "^0.4.0",
+    "@types/node": "^22",
+    "typescript": "^5",
+    "vitest": "^3"
+  }
+}
