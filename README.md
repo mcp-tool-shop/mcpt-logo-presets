@@ -120,6 +120,31 @@ applyPresetToCompileOptions(preset, userOptions): CompileOptions
 applyPresetToGenOptions(preset, userOptions): GenOptions
 ```
 
+## Security & Data Scope
+
+| Aspect | Detail |
+|--------|--------|
+| **Data touched** | In-memory preset objects (checkpoints, samplers, prompts) |
+| **Data NOT touched** | No filesystem access, no network requests, no user data |
+| **Permissions** | None — pure library with no I/O |
+| **Network** | None |
+| **Telemetry** | None collected or sent |
+
+See [SECURITY.md](SECURITY.md) for vulnerability reporting.
+
+## Scorecard
+
+| Category | Score |
+|----------|-------|
+| A. Security | 10 |
+| B. Error Handling | 10 |
+| C. Operator Docs | 10 |
+| D. Shipping Hygiene | 10 |
+| E. Identity (soft) | 10 |
+| **Overall** | **50/50** |
+
+> Full audit: [SHIP_GATE.md](SHIP_GATE.md) · [SCORECARD.md](SCORECARD.md)
+
 ## License
 
 MIT

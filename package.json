@@ -1,6 +1,6 @@
 {
   "name": "@mcptoolshop/logo-presets",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Curated generation presets for @mcptoolshop/logo-studio. Skip the tuning, start generating.",
   "type": "module",
   "main": "dist/index.js",
