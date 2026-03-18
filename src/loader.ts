@@ -5,6 +5,7 @@
  */
 
 import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { BUILT_IN_PRESETS } from './built-in.js';
 import type { GenerationPreset, PresetFile } from './types.js';
 
@@ -37,7 +38,7 @@ export function loadPreset(
  * The file must follow the PresetFile schema (version: 1).
  */
 export function loadUserPresets(filePath: string): GenerationPreset[] {
-  const raw = readFileSync(filePath, 'utf-8');
+  const raw = readFileSync(resolve(filePath), 'utf-8');
   const parsed = JSON.parse(raw) as PresetFile;
 
   if (parsed.version !== 1) {

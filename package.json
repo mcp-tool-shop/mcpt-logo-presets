@@ -51,7 +51,7 @@
     "node": ">=18"
   },
   "peerDependencies": {
-    "@mcptoolshop/logo-studio": ">=0.4.0"
+    "@mcptoolshop/logo-studio": ">=1.0.0"
   },
   "devDependencies": {
     "@mcptoolshop/logo-studio": "^0.4.0",
